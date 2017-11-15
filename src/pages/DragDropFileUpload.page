@@ -1,6 +1,7 @@
 <apex:page id="thePage" extensions="DragDropFileUploadController" sidebar="false" showheader="false" standardStylesheets="true" standardController="Account" >
 
-<apex:includeScript value="{!URLFOR($Resource.UIJQuery1822, 'js/jquery-1.7.2.min.js')}"/>
+<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script> 
+
 
 	<apex:variable var="objId" value="{!Account.Id}"/>
 	
@@ -53,7 +54,7 @@
 			</div>
 			
 			<div id="loading">
-				<apex:image value="/img/loading.gif"  width="18" /> Uploading...
+				<b> Uploading... </b>
 			</div>
 			<div id="fileslist"></div>
 		</div>
